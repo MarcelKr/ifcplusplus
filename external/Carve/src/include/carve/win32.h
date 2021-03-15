@@ -8,6 +8,7 @@
 #include <string.h>
 #include <stdlib.h>
 
+#if 0
 inline int strcasecmp(const char *a, const char *b) {
   return _stricmp(a,b);
 }
@@ -19,6 +20,7 @@ inline void srandom(unsigned long input) {
 inline long random() {
   return rand();
 }
+#endif
 
 #if defined(_MSC_VER)
 #  include <carve/cbrt.h>
